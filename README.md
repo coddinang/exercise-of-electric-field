@@ -1,2 +1,2 @@
-# sum-of-electric-field
-This is a exercise about sum of electric field. 
+# exercise-of-electric-field
+presents electric field exercise. 

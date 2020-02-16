@@ -2,7 +2,7 @@
 # It is about electric force continuous distribution
 # import math module
 import math
-from fundamentals.Class_3_MoreControlFlowTools.ifStatement import printLine
+# from fundamentals.Class_3_MoreControlFlowTools.ifStatement import printLine
 # For validation I need import 'os'
 import os
 # print(os.name)
@@ -14,7 +14,7 @@ def Clean_THEWINDOW():
         os.system("cls")
 
 def welcome():
-    printLine(30, 0)
+    print("-"*30)
     print("WELCOME")
     while True:
         option = int(validation_METHOD("MENU \n 1-Solve the problem \n 2-Exit\n Option: "))
@@ -28,14 +28,13 @@ def welcome():
             Clean_THEWINDOW()
             continue
 
-    printLine(30, 0)
+    print("-"*30)
 def validation_METHOD(valor_INPUT):
     # using validation with 'os'
     while True:
         try:
             valor = float(input(valor_INPUT))
             return valor
-            break
         except ValueError:
             # VALIDATION_FIRST = input("   ingrese un numero: \n   1-cambiar numero \n   2-reiniciar\n
             # option: ") if VALIDATION_FIRST == 1:
@@ -79,7 +78,7 @@ def electricFCD():
             list_VECTOR.append(vector)
         print("    [x_"+str(num)+", y_"+str(num)+", z_"+str(num)+"] = ", list_VECTOR)
 
-        # restar 'list_VECTOR' y 'vector_ZERO'
+        # rest 'list_VECTOR' y 'vector_ZERO'
         for i in range(len(vector_ZERO)):
             vector_POSITION.append(vector_ZERO[i] - list_VECTOR[i])
         print("    [x_0, y_0, z_0] - [x_"+str(num)+", y_"+str(num)+", z_"+str(num)+"] = ",vector_POSITION)
@@ -105,7 +104,7 @@ def electricFCD():
         list_RESULT_VECTOR.clear()
 
     # print(list_RESULT_VECTOR_SUM)
-    printLine(60, 0)
+    print("-"*30)
     for v in list_RESULT_VECTOR_SUM:
         # e = 8.8541878176 * math.pow(10, -12)
         k = 9 * math.pow(10, 9)

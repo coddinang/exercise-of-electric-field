@@ -14,6 +14,7 @@ def Clean_THEWINDOW():
         os.system("cls")
 
 def welcome():
+    Clean_THEWINDOW()
     print("-"*30)
     print("WELCOME")
     while True:

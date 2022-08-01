@@ -22,8 +22,6 @@ def validation_method(input_value):
             valor = float(input(input_value))
             return valor
         except ValueError:
-            # VALIDATION_FIRST = input("   ingrese un numero: \n   1-cambiar numero \n   2-reiniciar\n
-            # option: ") if VALIDATION_FIRST == 1:
             print("   ingresa un número")
 
 def electricFCD():
@@ -37,7 +35,6 @@ def electricFCD():
     Q_0 = validation_method("Valor de la carga \'Q\': ")
     for iterator in range(3):
         if iterator == 0:
-            # using validation with 'os'
             vector = validation_method("   x_0: ")
         elif iterator == 1:
             vector = validation_method("   y_0: ")
@@ -66,7 +63,7 @@ def electricFCD():
             list_vector.append(vector)
         print("    [x_"+str(num)+", y_"+str(num)+", z_"+str(num)+"] = ", list_vector)
 
-        # rest 'list_vector' y 'vector_zero'
+        # Subtraction between 'list_vector' and 'vector_zero'
         for i in range(len(vector_zero)):
             vector_position.append(vector_zero[i] - list_vector[i])
         print("    [x_0, y_0, z_0] - [x_"+str(num)+", y_"+str(num)+", z_"+str(num)+"] = ",vector_position)
